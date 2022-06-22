@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Soul Realms Privacy Policy">
+        <meta property="og:description" content="Soul Realms is a combination of Faction-RPG, bringing you a new experience of RPG on discord. More than hundreds of people are enjoying this game, join now!">
+        <meta property="og:image" content="https://soulrealms.ml/data/botLogo.png">
         <title>Soul Realms</title>
-        <link rel="icon" href="data/icon.png">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="data/botLogo.png">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="header">
-            <ul>
-                <li><img src="data/icon.png" width="75px" height="75px"></li>
-                <li><a class="disablehover" href="index.html">Soul Realms</a></li>
-                <li style="float: right"><a href="donate.html">Patreon</a></li>
-                <li style="float: right"><a href="https://top.gg/bot/875954323291537429">Top.gg</a></li>
-                <li style="float: right"><a href="server.html">Support Server</a></li>
-            </ul>
-        </div>
-        <div class="h"><a>Soul Realms Privacy Policy</a></div>
-        <div class="h2">
-            <li><d1>Information used to track you</d1></li><br><br>
-            <d2>- All your data is collected by us legally, Discord or a third party (Example: From Patreon if you subscribe to our Rank).<br>- Your purchases in patreon.<br>- Your Patreon user ID if you ever subscribed to our Rank.<br>- Certain data for analytics purposes.</d2><br><br>
-            <li><d1>Information to be shared</d1></li><br><br>
-            <d2>We don't share your information with any third parties, don't worry about that!</d2><br><br>
-            <li><d1>Who has access to Traveler's information</d1></li><br><br>
-            <d2>- Only Soul Realms team can access that information.<br>- You should be aware that people with access to your device may have access to some of your account data and do things on your behalf (Example: Being able to access your device control panel) your owner, can check your username, id, avatar etc from the data we have stored about you), so we recommend that you keep your account secure.</d2><br><br>
-            <li><d1>Changes to our Privacy Policy</d1></li><br><br>
-            <d2>We may update our Privacy Policy at any time with or without notice and they'll be effective from the date we mention on the "Effective From" part in this page, so we suggest you to check this page regularly.</d2><br><br>
-            <li><d1>Contact Us</d1></li><br><br>
-            <d2><a href="server.html">Join Our Support server</a><br><br>Main moderators:<br>→ Rinkitori#3106<br>→ TrieuHiroVN ❄️#9063<br>→ CVHNups#6432<br>→ PonJu#6583</d2>
-        </div>
-        <div class="footer">
-            <div class="b5"><a3>CopyRight (c) 2021 NinNin Sabishi Team<br>Web developed by TrieuHiroVN ❄️#9063</a3></div>
-            <div class="b6">
+            <a href="index.html"><img src="data/botLogo.png" alt="Soul Realms Bot"></a>
+            <div class="menu">
                 <ul>
-                    <li><a href="terms.html">Term of Service</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li style="float: left"><a class="disablehover" href="index.html">Soul Realms</a></li>
+                    <li id="mobile-hide"><a href="donate.html">Patreon</a></li>
+                    <li id="mobile-hide"><a href="top.gg">Top.gg</a></li>
+                    <li id="mobile-hide"><a href="server.html">Support Server</a></li>
+                    <li id="mobile-show">
+                        <div class="dropdown" id="mobile-show">
+                            <input type="image" src="data/menuIcon.svg" class="dropbtn" onclick="dropdown()">
+                            <div class="dropdown-content" id="dropdown">
+                                <a href="server.html">Support Server</a>
+                                <a href="https://top.gg/bot/875954323291537429">Top.gg</a>
+                                <a href="donate.html">Patreon</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <a>|</a>
+        </div>
+        <div class="content">
+            <div class="main"  style="margin-top: 50px; margin-bottom: 50px;">
+                <h1>Soul Realms Privacy Policy</h1>
+            </div>
+            <div class="sub">
+                <h1>Information used to track you</h1>
+                <h2>All your data is collected by us legally, Discord or a third party (Example: From Patreon if you subscribe to our Rank).</h2>
+                <h2>Your purchases in patreon</h2>
+                <h2>Your Patreon user ID if you ever subscribed to our Rank.</h2>
+                <h2>Certain data for analytics purposes.</h2>
+                <h1>Information to be shared</h1>
+                <h2>We don't and never share your information with any third parties, don't worry about that!</h2>
+                <h1>Who has access to Traveler's information</h1>
+                <h2>Only Soul Realms team can access that information.</h2>
+                <h2>You should be aware that people with access to your device may have access to some of your account data and do things on your behalf (Example: Being able to access your device control panel) your owner, can check your username, id, avatar etc from the data we have stored about you), so we recommend that you keep your account secure.</h2>
+                <h1>Changes to our Privacy Policy</h1>
+                <h2>We may update our Privacy Policy at any time with or without notice and they'll be effective from the date we mention on the "Effective From" part in this page, so we suggest you to check this page regularly.</h2>
+            </div>
+        </div>
+        <div style="height: 150px;"></div>
+        <div class="footer">
+            <h3 style="float: right;"><a href="terms.html">Terms of Service</a></h3>
+            <h3 id="mobile-hide">Web developed by TrieuHiroVN ❄#9063</h3>
+            <h3 id="mobile-show">(c) 2021</h3>
+            <br id="mobile-hide">
+            <h3 style="float: right;"><a href="privacy.html">Privacy Policy</a></h3>
+            <h3 id="mobile-hide">CopyRight (c) 2021 NinNin Sabishi Team</h3>
+            <h3 id="mobile-show">NNS Team</h3>
         </div>
     </body>
 </html>

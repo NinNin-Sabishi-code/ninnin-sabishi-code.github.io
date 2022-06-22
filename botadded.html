@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Soul Realms Added</title>
-        <link rel="icon" href="data/icon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Thanks for inviting Soul Realms">
+        <meta property="og:description" content="Soul Realms is a combination of Faction-RPG, bringing you a new experience of RPG on discord. More than hundreds of people are enjoying this game, join now!">
+        <meta property="og:image" content="https://soulrealms.ml/data/botLogo.png">
+        <title>Thank You!</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="data/botLogo.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="header">
-            <ul>
-                <li><img src="data/icon.png" width="75px" height="75px"></li>
-                <li><a class="disablehover" href="index.html">Soul Realms</a></li>
-            </ul>
-        </div>
-        <div class="b1">
-            <a1>Soul Realms Added!</a1><br>
-            <a2>Thanks for choosing our service, here are somewhere you might want to go</a2>
-            <div class="buttons">
-                <button class="raise"><a href="server.html">Support Server</a></button>
-                <button class="raise"><a href="index.html">&nbsp;&nbsp;Home Page&nbsp;&nbsp;</a></button>
-                <button class="raise"><a href="donate.html">&nbsp;&nbsp;&nbsp;&nbsp;Donate&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+            <a href="index.html"><img src="data/botLogo.png" alt="Soul Realms Bot"></a>
+            <div class="menu">
+                <ul>
+                    <li style="float: left"><a class="disablehover" href="index.html">Soul Realms</a></li>
+                    <li id="mobile-hide"><a href="donate.html">Patreon</a></li>
+                    <li id="mobile-hide"><a href="top.gg">Top.gg</a></li>
+                    <li id="mobile-hide"><a href="server.html">Support Server</a></li>
+                    <li id="mobile-show">
+                        <div class="dropdown" id="mobile-show">
+                            <input type="image" src="data/menuIcon.svg" class="dropbtn" onclick="dropdown()">
+                            <div class="dropdown-content" id="dropdown">
+                                <a href="server.html">Support Server</a>
+                                <a href="https://top.gg/bot/875954323291537429">Top.gg</a>
+                                <a href="donate.html">Patreon</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <div style="height: 120px;"></div>
+        <div class="content">
+            <div class="main">
+                <h1>Soul Realms Added!</h1>
+                <h2 id="mobile-hide">Thanks for choosing our service!</h2>
+                <button>
+                    <a href="index.html">Back to Home</a>
+                </button>
+            </div>
+        </div>
+        <div style="height: 200px;"></div>
+        <div class="footer">
+            <h3 style="float: right;"><a href="terms.html">Terms of Service</a></h3>
+            <h3 id="mobile-hide">Web developed by TrieuHiroVN ❄#9063</h3>
+            <h3 id="mobile-show">(c) 2021</h3>
+            <br id="mobile-hide">
+            <h3 style="float: right;"><a href="privacy.html">Privacy Policy</a></h3>
+            <h3 id="mobile-hide">CopyRight (c) 2021 NinNin Sabishi Team</h3>
+            <h3 id="mobile-show">NNS Team</h3>
         </div>
     </body>
 </html>
